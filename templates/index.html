@@ -1,0 +1,211 @@
+ <!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Groopie-Tracker</title>
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style/st.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://localhost:8080">Groopie
+            Tracker</a>
+        </div>
+
+        <form class="navbar-form navbar-right"
+          action="http://localhost:8080/search" method="get">
+          <div class="input-group">
+            <input name="q" type="text" class="form-control"
+              placeholder="Search" list="suggestions">
+            <datalist id="suggestions">
+              {{range .Value}}
+              <option value="{{.Name}}" label="Artist/Band">
+                {{range .Members}}
+                <option value="{{.}}" label="Members">
+                  {{end}}
+                  <option value="{{.FirstAlbum}}" label="First Album Date">
+                    <!-- Add more suggestions here -->
+                    {{range .Locations.Locations}}
+                    <option value="{{.}}" label="Location">
+                      {{end}}
+                      <option value="{{.CreationDate}}" label="Creation Date">
+                        {{end}}
+                      </datalist>
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-default"
+                      data-toggle="modal"
+                      data-target="#filterForm" style="margin-left: 10px;">
+                      <i class="glyphicon glyphicon-filter"></i>
+                    </button>
+
+                  </form>
+
+                </div>
+              </nav>
+              <!-------------------------------------------------------------------------------FILTERS------------------------------------------------------ -->
+              <div class="modal fade" id="filterForm" tabindex="-1"
+                role="dialog" aria-labelledby="filterFormLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header" style="height: 5vh;">
+                      <h3 class="col-12 modal-title text-center"
+                        id="filterFormLabel">Filters</h3>
+                      <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="filterstyle" action="/filter" method="get">
+                        <!-- Add your filter input fields here (e.g., range sliders and checkboxes) -->
+                        <!-- Example: -->
+                        <div class="form-group">
+                          <label> Concert Locations: </label>
+                          <div class="Selection">
+                            <select list="Country" name="Country">
+
+                              <option value>Select a location</option>
+                              {{range .Zebi}}
+                              <option value="{{.}}">{{.}}</option>
+                              {{end}}
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Creation Date
+                            Range: </label>
+
+                          <div class="range-slider">
+                            <input name="minC" type="range" min="1958"
+                              max="2015"
+                              value="1958"
+                              step="1" id="minRange">
+                            <input name="maxC" type="range"
+                              min="1958" max="2015" value="2015"
+                              step="1" id="maxRange">
+                            <span id="rangeValues">1958 - 2015</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Number of members: </label>
+                          <div class="checkbox">
+                            <label><input type="checkbox" name="Members"
+                                value="1">1</label>
+                            <label><input type="checkbox" name="Members"
+                                value="2">2</label>
+                            <label><input type="checkbox" name="Members"
+                                value="3">3</label>
+                            <label><input type="checkbox" name="Members"
+                                value="4">4</label>
+                            <label><input type="checkbox" name="Members"
+                                value="5">5</label>
+                            <label><input type="checkbox" name="Members"
+                                value="6">6</label>
+                            <label><input type="checkbox" name="Members"
+                                value="7">7</label>
+
+                          </div>
+                        </div>
+                        <div class="form-group"><label for="first-album-range">First
+                            Album Date Range:</label>
+                          <div class="input-group">
+                            <input type="date" id="first-album-start"
+                              name="first-album-start" class="form-control">
+                            <span class="input-group-addon">to</span>
+                            <input type="date" id="first-album-end"
+                              name="first-album-end" class="form-control">
+                          </div></div>
+
+                      </div>
+
+                      <!-- Add more filter input fields as needed -->
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-default">Apply
+                        Filters</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <section class="hero__Wrapper-sc-1h2eool-0 lgTwHp">
+              <h1 class="hero__Title-sc-1h2eool-1 jiKqlM">Groopie Tracker</h1>
+            </section>
+
+            <div class="groopies">
+              {{range .Value}}
+              <figure class="photo">
+                <img src="{{.Image}}" alt="sq-sample14" />
+                <figcaption>
+                  <i>{{.Name}}</i>
+                </figcaption>
+                <a href="http://localhost:8080/artist/{{.Id}}"></a>
+              </figure>
+              {{end}}
+            </div>
+            <script>
+                const minRange = document.getElementById("minRange");
+const maxRange = document.getElementById("maxRange");
+const rangeValues = document.getElementById("rangeValues");
+
+
+minRange.addEventListener('input', () => {
+        if (parseInt(minRange.value) > parseInt(maxRange.value)) {
+            maxRange.value = minRange.value;
+        }
+        updateRange();
+    });
+
+    maxRange.addEventListener('input', () => {
+        if (parseInt(maxRange.value) < parseInt(minRange.value)) {
+            minRange.value = maxRange.value;
+        }
+        updateRange();
+    });
+    
+function updateRange() {
+    const minValue = minRange.value;
+    const maxValue = maxRange.value;
+
+    rangeValues.textContent = `${minValue} - ${maxValue}`;
+}
+
+    // Get the "end date" input element
+    const endDateInput = document.getElementById('first-album-end');
+
+    // Create a Date object for today's date
+    const today = new Date();
+
+    // Format today's date as "YYYY-MM-DD" for the input field
+    const formattedDate = today.toISOString().split('T')[0];
+
+    // Set the value of the "end date" input field to today's date
+    endDateInput.value = formattedDate;
+
+
+              </script>
+          </body>
+        </html>

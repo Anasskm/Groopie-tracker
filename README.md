@@ -2,7 +2,7 @@
 
 Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Trackers project. The aim of this project is to create a user-friendly website that displays detailed information about various bands and artists using a provided API. This project involves both frontend and backend development, focusing on data manipulation, event handling, and client-server communication.
 
-## Table of Contents 📋
+## Table of Contents 📋
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
@@ -26,7 +26,7 @@ The goal is to present this data through various visualizations and to implement
 
 ---
 
-## Getting Started 🚀
+## Getting Started 🚀
 
 ⚙️ To get a local copy of this repository, clone it using git:
 
@@ -34,10 +34,9 @@ The goal is to present this data through various visualizations and to implement
 git clone https://github.com/Anasskm/Groopie-tracker.git
 ```
 
-### Prerequisites
+ ### Prerequisites
 
 Ensure you have the following installed:
-
 - Go
 - A web browser
 
@@ -61,18 +60,18 @@ Ensure you have the following installed:
  - Display artist information, including names, images, years of activity, first album dates, and members.
  - Interactive visualizations like cards and tables.
  
- ### Concerts
+ ### Concerts
 
  - Display upcoming and past concert locations and dates.:e_mail:
  - Interactive maps and calendars.
  
- ### Client-Server Interaction
+ ### Client-Server Interaction
  - Implement an event/action feature that triggers a server response.
  - Example: Search functionality that fetches and displays artists based on user input.
  
 ---
 
-## Technologies Used :computer: 
+## Technologies Used 💻 
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: Go
@@ -80,7 +79,7 @@ Ensure you have the following installed:
 
 ---
 
-## Resources :books:
+## Resources 📚
 Here are some resources that were helpful during the development of this project:
 
 - [Go Documentation :blue_book:](https://go.dev/doc/)

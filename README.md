@@ -13,7 +13,7 @@ Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Track
 
 ---
 
-## 📖 Overview
+## Overview  📖
 Groupie Trackers is a project that involves creating a website to display information about bands and artists based on a given API. The API consists of four parts:
 
 1. Artists: Contains information about bands and artists, including names, images, years of activity, first album dates, and members.
@@ -25,7 +25,7 @@ The goal is to present this data through various visualizations and to implement
 
 ---
 
-## 🚀Getting Started
+## Getting Started 🚀
 
 ⚙️ To get a local copy of this repository, clone it using git:
 
@@ -53,7 +53,7 @@ Ensure you have the following installed:
     ```
 ---
 
-## :sparkles: Features
+## Features :sparkles:
 
 ### Artists
 
@@ -71,7 +71,7 @@ Ensure you have the following installed:
 
 ---
 
-## :computer: Technologies Used
+## Technologies Used :computer: 
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: Go
@@ -79,7 +79,7 @@ Ensure you have the following installed:
 
 ---
 
-## :books: Resources
+## Resources :books:
 Here are some resources that were helpful during the development of this project:
 
 - [Go Documentation :blue_book:]
@@ -88,7 +88,7 @@ Here are some resources that were helpful during the development of this project
 - [JavaScript Documentation :scroll:]
 ---
 
-## :e_mail: Contact
+## Contact :e_mail:
 
 🌟 Connect with me:
 

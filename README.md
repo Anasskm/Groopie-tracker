@@ -4,12 +4,12 @@ Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Track
 
 ## Table of Contents 📋
 
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Resources](#resources)
-- [Contact](#contact)
+- [Overview](#overview-)
+- [Getting Started](#getting-started-)
+- [Features](#features-)
+- [Technologies Used](#technologies-used-)
+- [Resources](#resources-)
+- [Contact](#contact-)
 
 ---
 

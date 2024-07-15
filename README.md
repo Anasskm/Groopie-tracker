@@ -4,12 +4,12 @@ Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Track
 
 ## 📋 Table of Contents
 
-[Overview](#Overview)
-[Getting Started](#Getting-Started)
-[Features](#Features)
-[Technologies Used](#Technologies-Used)
-[Resources](#Resources)
-[Contact](#Contact)
+- [Overview](#Overview)
+- [Getting Started](#Getting-Started)
+- [Features](#Features)
+- [Technologies Used](#Technologies-Used)
+- [Resources](#Resources)
+- [Contact](#Contact)
 
 ---
 
@@ -62,7 +62,7 @@ Ensure you have the following installed:
 
 ### Concerts
 
-- Display upcoming and past concert locations and dates.
+- Display upcoming and past concert locations and dates.:e_mail:
 - Interactive maps and calendars.
 
 ### Client-Server Interaction

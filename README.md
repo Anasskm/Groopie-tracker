@@ -2,24 +2,25 @@
 
 Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Trackers project. The aim of this project is to create a user-friendly website that displays detailed information about various bands and artists using a provided API. This project involves both frontend and backend development, focusing on data manipulation, event handling, and client-server communication.
 
-## 📋 Table of Contents
+## Table of Contents 📋 
 
-- [Overview](#Overview)
-- [Getting Started](#Getting-Started)
-- [Features](#Features)
-- [Technologies Used](#Technologies-Used)
-- [Resources](#Resources)
-- [Contact](#Contact)
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Resources](#resources)
+- [Contact](#contact)
 
 ---
 
-## Overview  📖
+## Overview 📖
+
 Groupie Trackers is a project that involves creating a website to display information about bands and artists based on a given API. The API consists of four parts:
 
-1. Artists: Contains information about bands and artists, including names, images, years of activity, first album dates, and members.
-2. Locations: Lists the locations of their last or upcoming concerts.
-3. Dates: Lists the dates of their last or upcoming concerts.
-4. Relation: Links artists, dates, and locations.
+1. **Artists**: Contains information about bands and artists, including names, images, years of activity, first album dates, and members.
+2. **Locations**: Lists the locations of their last or upcoming concerts.
+3. **Dates**: Lists the dates of their last or upcoming concerts.
+4. **Relation**: Links artists, dates, and locations.
 
 The goal is to present this data through various visualizations and to implement a client-server feature that responds to user actions.
 
@@ -82,13 +83,13 @@ Ensure you have the following installed:
 ## Resources :books:
 Here are some resources that were helpful during the development of this project:
 
-- [Go Documentation :blue_book:]
-- [HTML Documentation :globe_with_meridians:]
-- [CSS Documentation :art:]
-- [JavaScript Documentation :scroll:]
+- [Go Documentation :blue_book:](https://go.dev/doc/)
+- [HTML Documentation :globe_with_meridians:](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS Documentation :art:](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript Documentation :scroll:](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ---
 
-## Contact :e_mail:
+## Contact 🌐
 
 🌟 Connect with me:
 

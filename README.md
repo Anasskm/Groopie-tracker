@@ -96,5 +96,4 @@ Here are some resources that were helpful during the development of this project
 - Email: karoumi14@gmail.com
 ---
 
-
-Happy coding! 💻
+<p align="center">Happy coding! 💻</p>

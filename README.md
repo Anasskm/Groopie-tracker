@@ -2,7 +2,7 @@
 
 Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Trackers project. The aim of this project is to create a user-friendly website that displays detailed information about various bands and artists using a provided API. This project involves both frontend and backend development, focusing on data manipulation, event handling, and client-server communication.
 
-## Table of Contents 📋 
+## Table of Contents 📋
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
@@ -54,22 +54,22 @@ Ensure you have the following installed:
     ```
 ---
 
-## Features :sparkles:
+## Features ✨
 
-### Artists
+ ### Artists
 
-- Display artist information, including names, images, years of activity, first album dates, and members.
-- Interactive visualizations like cards and tables.
+ - Display artist information, including names, images, years of activity, first album dates, and members.
+ - Interactive visualizations like cards and tables.
+ 
+ ### Concerts
 
-### Concerts
-
-- Display upcoming and past concert locations and dates.:e_mail:
-- Interactive maps and calendars.
-
-### Client-Server Interaction
-- Implement an event/action feature that triggers a server response.
-- Example: Search functionality that fetches and displays artists based on user input.
-
+ - Display upcoming and past concert locations and dates.:e_mail:
+ - Interactive maps and calendars.
+ 
+ ### Client-Server Interaction
+ - Implement an event/action feature that triggers a server response.
+ - Example: Search functionality that fetches and displays artists based on user input.
+ 
 ---
 
 ## Technologies Used :computer: 
@@ -98,4 +98,4 @@ Here are some resources that were helpful during the development of this project
 ---
 
 
-Happy coding! :computer:
+Happy coding! 💻

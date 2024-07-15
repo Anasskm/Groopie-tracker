@@ -1,6 +1,6 @@
 # Groupie Trackers Project 🎸
 
-Hey there! 👋 I'm [Your Name], and this repository is dedicated to the Groupie Trackers project. The aim of this project is to create a user-friendly website that displays detailed information about various bands and artists using a provided API. This project involves both frontend and backend development, focusing on data manipulation, event handling, and client-server communication.
+Hey there! 👋 I'm Anass, and this repository is dedicated to the Groupie Trackers project. The aim of this project is to create a user-friendly website that displays detailed information about various bands and artists using a provided API. This project involves both frontend and backend development, focusing on data manipulation, event handling, and client-server communication.
 
 ## 📋 Table of Contents
 
@@ -25,11 +25,12 @@ The goal is to present this data through various visualizations and to implement
 
 ---
 
-## 🚀 Getting Started
+## 🚀Getting Started
+
 ⚙️ To get a local copy of this repository, clone it using git:
 
 ```bash
-git clone https://github.com/[YourGitHubUsername]/groupie-trackers.git
+git clone https://github.com/Anasskm/Groopie-tracker.git
 ```
 
 ### Prerequisites
